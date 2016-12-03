@@ -21,6 +21,15 @@ main {
   justify-content: center;
   align-items: center;
 }
+#goodies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#restOshit {
+  display: none;
+}
 h1 {
   font-size: 8vh;
 }
@@ -48,7 +57,7 @@ p {
   }
 }
 .rotated-image {
-  animation: spins .5s steps(4) 3;
+  animation: spins .5s steps(4) 4;
 }
 @keyframes spins {
   25%{
@@ -62,5 +71,25 @@ p {
   }
   100%{
     transform: rotate(360deg);
+  }
+}
+.shake {
+  animation: shake .5s steps(4) infinite;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
   }
 }
