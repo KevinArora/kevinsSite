@@ -22,12 +22,20 @@ main {
   align-items: center;
 }
 #goodies {
+    height:90vh;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 #restOshit {
+  display: none;
+  height:90vh;
+  width: 90vw;
+}
+#letsDoit {
+  position:absolute;
   display: none;
 }
 h1 {
@@ -92,4 +100,18 @@ p {
   40%, 60% {
     transform: translate3d(4px, 0, 0);
   }
+}
+.superman {
+  animation: superman 1s steps(100) infinite;
+}
+@keyframes superman {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(4.0);
+    }
+    100% {
+        transform: scale(1.0);
+    }
 }
