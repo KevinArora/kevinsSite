@@ -7,6 +7,22 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <img class="kevin" src="images/kevin.png">
+  <main>
+    <h1>KEVIN ARORA</h1>
+    <img class="kevin" src="images/kevin.png">
+    <h3>Who Am I...????</h3>
+    <p id="changeText">-- A Lover --</p>
+  </main>
+   <script type="text/javascript">
+    const text = ["-- A Lover --", "-- A Friend --", "-- A Tennor --", "-- A Classroom Troll --", "-- NOT REALY AN ASSHOLE --", "-- MORE LIKE A SON OF A BITCH --", "-- A Puppy Enthusiast --", "-- A Swell Lad Whose Friends Made him this Site --"];
+    let counter = 0;
+    const elem = document.getElementById("changeText");
+    setInterval(change, 1500);
+    function change() {
+     elem.innerHTML = text[counter];
+        counter++;
+        if(counter >= text.length) { counter = 0; }
+    }
+    </script>
 </body>
 </html>
