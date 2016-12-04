@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", ()=> {
   }
 
   goodies.on("click", function spin() {
-
     div.classList.add('rotated-image');
     const intervalID2 = setInterval(shaking, 1000);
     function shaking () {
@@ -37,8 +36,19 @@ document.addEventListener("DOMContentLoaded", ()=> {
   })
 
   restOshit.on("click", function Walphin() {
+    restOshit.fadeOut();
     letsDoit.show();
     letsDoit.addClass('superman');
+    const intervalID4 = setInterval(home, 2000);
+    function home () {
+    goodies.fadeIn();
+      letsDoit.hide();
+      letsDoit.removeClass('superman');
+      stop();
+    }
+    function stop () {
+      clearInterval(intervalID4);
+    }
   })
 
 })

@@ -102,7 +102,7 @@ p {
   }
 }
 .superman {
-  animation: superman 1s steps(100) infinite;
+  animation: superman 1s steps(100) 2;
 }
 @keyframes superman {
     0% {
