@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", ()=> {
 
-  console.log("Made by the ever growing boy 'Matt Keigwin and the OG wow-er 'Synclair Wang'")
+  console.log("Made by the ever growing boy 'Matt Keigwin and the OG wow-er 'Synclair Wang'...who fixed 1 of Matt's bugs, Matt did all the real work")
 
   const div = document.getElementById("image");
   const main = document.getElementById("main");
@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
     letsDoit.show();
     letsDoit.addClass('superman');
+    const audio = new Audio('images/batman.mp3');
+audio.play();
 
     setTimeout(() => {
       goodies.fadeIn();
