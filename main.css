@@ -37,6 +37,7 @@ main {
   display: none;
   height:90vh;
   width: 90vw;
+  text-align: center;
 }
 #letsDoit {
   position:absolute;
@@ -53,6 +54,13 @@ p {
 }
 .kevin:hover {
   animation: head 2s steps(4) infinite;
+}
+.what {
+  margin:5vh;
+}
+.size {
+  height: 35vh;
+  margin: 5vh;
 }
 @keyframes head {
   25%{
@@ -119,8 +127,6 @@ p {
         transform: scale(1.0);
     }
 }
-
-
 
 .fade-out {
   transition: opacity 1s ease-in-out;
